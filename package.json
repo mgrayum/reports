@@ -1,0 +1,18 @@
+{
+  "name": "prod-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "console-table-printer": "^2.10.0",
+    "csv-writer": "^1.6.0",
+    "minimist": "^1.2.5",
+    "mongodb": "^4.4.1"
+  }
+}
