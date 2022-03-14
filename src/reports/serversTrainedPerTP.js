@@ -59,4 +59,4 @@ execute()
         process.exit(1);
     });
 
-module.exports = { query };
+module.exports = {execute}

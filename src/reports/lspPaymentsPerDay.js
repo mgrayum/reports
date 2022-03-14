@@ -63,5 +63,4 @@ execute()
         process.exit(1);
     })
 
-
-
+module.exports = {execute}
