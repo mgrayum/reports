@@ -1,3 +1,4 @@
+const appRoot = require('app-root-path');
 const argv = require('minimist')(process.argv.slice(2));
 const ctx = require('../context');
 const utils = require('../utils')
@@ -58,7 +59,8 @@ execute()
                 servers: item.count
             }
         })
-        utils.writeCSV('C:/users/mgrayum/ideaprojects/prod-mongo/stats/approved-servers-per-week.csv', header, data);
+	    console.log({appRoot});
+        utils.writeCSV(`${appRoot}/stats/approved-servers-per-week.csv`, header, data);
 
     })
     .catch(err => {

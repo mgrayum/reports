@@ -4,7 +4,7 @@ const RUNTIME_APPLICATIONS = 'runtimeApplications';
 const PROVIDERS_DATA = 'providersData';
 const PAYMENTS = 'payments';
 
-const MONGO_PORT = 37010;
+const MONGO_PORT = 27017;
 const MONGO_USER = 'root';
 const MONGO_PWD = 'SdqncHq4t8';
 
