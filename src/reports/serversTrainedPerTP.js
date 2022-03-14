@@ -1,3 +1,4 @@
+const appRoot = require('app-root-path');
 const ctx = require('../context');
 const serversTrained = require('../queries/totalServersTrained');
 const utils = require('../utils')
@@ -51,7 +52,7 @@ execute()
                 percentage: tp.percentageOfTotal
             }
         })
-        utils.writeCSV('C:/users/mgrayum/ideaprojects/prod-mongo/stats/servers-trained-per-tp.csv', header, data);
+        utils.writeCSV(`${appRoot}/stats/servers-trained-per-tp.csv`, header, data);
 
     })
     .catch(err => {

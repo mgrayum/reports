@@ -1,3 +1,4 @@
+const appRoot = require('app-root-path');
 const argv = require('minimist')(process.argv.slice(2));
 const ctx = require('../context');
 const utils = require('../utils')
@@ -58,7 +59,7 @@ execute()
                 payments: item.count
             }
         })
-        utils.writeCSV('C:/users/mgrayum/ideaprojects/prod-mongo/stats/lsp-payments-per-week.csv', header, data);
+        utils.writeCSV(`${appRoot}/stats/lsp-payments-per-week.csv`, header, data);
     })
     .catch(err => {
         console.error(err);
